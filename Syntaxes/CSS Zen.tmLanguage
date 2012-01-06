@@ -30,6 +30,14 @@
 			<array>
 				<dict>
 					<key>include</key>
+					<string>#comment-section-header-block</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#comment-header-block</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#comment-block</string>
 				</dict>
 				<dict>
@@ -145,6 +153,14 @@
 					<string>meta.attribute-selector.css</string>
 				</dict>
 			</array>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#comment-section-header-block</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#comment-header-block</string>
 		</dict>
 		<dict>
 			<key>include</key>
@@ -272,6 +288,14 @@
 			<string>meta.property-list.css</string>
 			<key>patterns</key>
 			<array>
+				<dict>
+					<key>include</key>
+					<string>#comment-section-header-block</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#comment-header-block</string>
+				</dict>
 				<dict>
 					<key>include</key>
 					<string>#comment-block</string>
@@ -465,6 +489,40 @@
 			<string>\*/</string>
 			<key>name</key>
 			<string>comment.block.css</string>
+		</dict>
+		<key>comment-header-block</key>
+		<dict>
+			<key>begin</key>
+			<string>/\*</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.css</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\*/</string>
+			<key>name</key>
+			<string>comment.block.header.css</string>
+		</dict>
+		<key>comment-section-header-block</key>
+		<dict>
+			<key>begin</key>
+			<string>/\*</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.css</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\*/</string>
+			<key>name</key>
+			<string>comment.block.section.header.css</string>
 		</dict>
 		<key>string-double</key>
 		<dict>
