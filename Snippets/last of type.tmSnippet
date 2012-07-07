@@ -3,17 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>@media (min-width: ${1:480}px)
-{
-  $0
-}</string>
+	<string>$1:last-of-type$0</string>
 	<key>name</key>
-	<string>@media with size</string>
+	<string>last of type</string>
 	<key>scope</key>
 	<string>source.css, source.scss</string>
 	<key>tabTrigger</key>
-	<string>@ms</string>
+	<string>lt</string>
 	<key>uuid</key>
-	<string>840BA7FE-8A72-4D15-8721-C2AD3FCCEB73</string>
+	<string>738F468E-A5ED-4C7A-B26D-8C266FB330A1</string>
 </dict>
 </plist>
