@@ -1398,7 +1398,7 @@
 		<key>variable_setting</key>
 		<dict>
 			<key>begin</key>
-			<string>(\$[\w\-]+)\s{0,}(:)</string>
+			<string>(\$[\w\-_]+)\s{0,}(:)</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -1439,7 +1439,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(\s*)(\$[a-zA-Z0-9_-]+)</string>
+			<string>(\$[\w\-_]+)</string>
 			<key>name</key>
 			<string>variable.scss</string>
 		</dict>
