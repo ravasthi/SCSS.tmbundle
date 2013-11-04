@@ -2,18 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>content</key>
+	<string>#{$0}</string>
 	<key>name</key>
-	<string>Indentation Rules</string>
+	<string>Interpolation</string>
 	<key>scope</key>
 	<string>source.scss</string>
-	<key>settings</key>
-	<dict>
-		<key>decreaseIndentPattern</key>
-		<string>^\s*\}</string>
-		<key>increaseIndentPattern</key>
-		<string>(^.*\{[^}]*$)</string>
-	</dict>
+	<key>tabTrigger</key>
+	<string>#</string>
 	<key>uuid</key>
-	<string>2E4DDA47-1FC3-4FF7-A719-49ED6FA8ECFF</string>
+	<string>C6F1D660-63C4-4810-8499-69951145443A</string>
 </dict>
 </plist>
