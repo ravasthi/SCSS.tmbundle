@@ -1831,6 +1831,8 @@
 		<dict>
 			<key>comment</key>
 			<string>Stuff for Selectors.</string>
+			<key>name</key>
+			<string>meta.selector.scss</string>
 			<key>patterns</key>
 			<array>
 				<dict>
