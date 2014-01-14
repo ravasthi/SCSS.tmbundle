@@ -8,6 +8,8 @@
 	<array>
 		<string>scss</string>
 		<string>css.scss</string>
+		<string>scss.erb</string>
+		<string>css.scss.erb</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>\{\s*$</string>
