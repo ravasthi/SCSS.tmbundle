@@ -1045,6 +1045,25 @@
 			<key>name</key>
 			<string>comment.block.scss</string>
 		</dict>
+		<key>comment_header_block</key>
+		<dict>
+			<key>begin</key>
+			<string>\s*/\*\-+</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.whitespace.comment.trailing.scss</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Comment header block.</string>
+			<key>end</key>
+			<string>\s*(\*/)</string>
+			<key>name</key>
+			<string>comment.block.header.scss</string>
+		</dict>
 		<key>comment_line</key>
 		<dict>
 			<key>begin</key>
@@ -1349,6 +1368,10 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#comment_header_block</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#comment_block</string>
 				</dict>
 				<dict>
@@ -1431,6 +1454,10 @@
 				<dict>
 					<key>include</key>
 					<string>#comment_line</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#comment_header_block</string>
 				</dict>
 				<dict>
 					<key>include</key>
