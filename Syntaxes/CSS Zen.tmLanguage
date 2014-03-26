@@ -594,7 +594,7 @@
 		</dict>
 	</dict>
 	<key>scopeName</key>
-	<string>source.css</string>
+	<string>source.css, source.scss</string>
 	<key>uuid</key>
 	<string>CDB401D2-F840-475E-BAB2-83D43236F460</string>
 </dict>

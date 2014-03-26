@@ -8,6 +8,8 @@
 	<array>
 		<string>scss</string>
 		<string>css.scss</string>
+		<string>scss.erb</string>
+		<string>css.scss.erb</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>\{\s*$</string>
@@ -1829,6 +1831,8 @@
 		<dict>
 			<key>comment</key>
 			<string>Stuff for Selectors.</string>
+			<key>name</key>
+			<string>meta.selector.scss</string>
 			<key>patterns</key>
 			<array>
 				<dict>
