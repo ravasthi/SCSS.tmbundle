@@ -14,7 +14,7 @@
 	<key>foldingStopMarker</key>
 	<string>(?&lt;!\*)\*\*/|^\s*\}</string>
 	<key>keyEquivalent</key>
-	<string>~@c</string>
+	<string>^@C</string>
 	<key>name</key>
 	<string>CSS Zen</string>
 	<key>patterns</key>
