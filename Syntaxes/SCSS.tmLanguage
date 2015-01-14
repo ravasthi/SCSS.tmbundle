@@ -721,7 +721,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>\s*((@)mixin) ([\w-]*)\s*\(</string>
+					<string>\s*((@)mixin) ([\w-_]*)\s*\(</string>
 					<key>captures</key>
 					<dict>
 						<key>1</key>
@@ -776,7 +776,7 @@
 					<key>comment</key>
 					<string>Simple Mixin</string>
 					<key>match</key>
-					<string>^\s*((@)mixin) ([\w-]{1,})</string>
+					<string>^\s*((@)mixin) ([\w-_]{1,})</string>
 					<key>name</key>
 					<string>meta.at-rule.mixin.scss</string>
 				</dict>
@@ -1857,7 +1857,7 @@
 		<key>selectors</key>
 		<dict>
 			<key>begin</key>
-			<string>^[ \t]*(?=(?:([@&amp;*:.#+&gt;\-_a-zA-Z\d ,\[\]\(\)=\^!|~$])+|.*#\{.+\}.*)\n)</string>
+			<string>^[ \t]*(?=(?:([&amp;*:.#+&gt;\-_a-zA-Z\d ,\[\]\(\)=\^!|~$])+|.*#\{.+\}.*)\n)</string>
 			<key>comment</key>
 			<string>Stuff for Selectors.</string>
 			<key>end</key>
