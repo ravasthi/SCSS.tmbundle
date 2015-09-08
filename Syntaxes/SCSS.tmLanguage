@@ -1560,7 +1560,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>\}</string>
+			<string>^\s*\}</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>0</key>

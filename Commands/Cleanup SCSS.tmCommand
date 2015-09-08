@@ -13,6 +13,8 @@ echo "$TM_SELECTED_TEXT" | sass-convert --from scss --to scss --dasherize</strin
 	<string>selection</string>
 	<key>inputFormat</key>
 	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^@C</string>
 	<key>name</key>
 	<string>Clean SCSS</string>
 	<key>outputCaret</key>
