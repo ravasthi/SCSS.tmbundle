@@ -1560,7 +1560,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>^\s*\}</string>
+			<string>\}</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>0</key>
@@ -1872,11 +1872,11 @@
 		<key>selectors</key>
 		<dict>
 			<key>begin</key>
-			<string>^[ \t]*(?=(?:([&amp;*:.#+&gt;\-_a-zA-Z\d ,\[\]\(\)=\^!|~$]+)|#\{(?=[^\}]+\}))\n)</string>
+			<string>^(?=[ \t]*[&amp;*:.#+&gt;a-zA-Z\[])</string>
 			<key>comment</key>
 			<string>Stuff for Selectors.</string>
 			<key>end</key>
-			<string>\s*(?=\{)</string>
+			<string>(?=\{)</string>
 			<key>name</key>
 			<string>meta.selector.scss</string>
 			<key>patterns</key>
