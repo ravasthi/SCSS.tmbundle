@@ -1035,7 +1035,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.whitespace.comment.trailing.scss</string>
+					<string>punctuation.definition.comment.scss</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -1054,7 +1054,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.whitespace.comment.trailing.scss</string>
+					<string>punctuation.definition.comment.header.scss</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -1074,6 +1074,23 @@
 			<string>$(\s*)</string>
 			<key>name</key>
 			<string>comment.line.scss</string>
+		</dict>
+		<key>comment_section_header_block</key>
+		<dict>
+			<key>begin</key>
+			<string>/\*-{5,}\[[\s\w]+\]-+\n</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.header.section.scss</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\*/</string>
+			<key>name</key>
+			<string>comment.block.header.section.scss</string>
 		</dict>
 		<key>constant_color</key>
 		<dict>
@@ -1368,6 +1385,10 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#comment_section_header_block</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#comment_header_block</string>
 				</dict>
 				<dict>
@@ -1454,6 +1475,10 @@
 				<dict>
 					<key>include</key>
 					<string>#comment_line</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#comment_section_header_block</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -1573,6 +1598,10 @@
 			<string>meta.property-list.scss</string>
 			<key>patterns</key>
 			<array>
+				<dict>
+					<key>include</key>
+					<string>#general</string>
+				</dict>
 				<dict>
 					<key>include</key>
 					<string>#flow_control</string>
@@ -1872,7 +1901,7 @@
 		<key>selectors</key>
 		<dict>
 			<key>begin</key>
-			<string>^(?=[ \t]*[&amp;*:.#+&gt;a-zA-Z\[])</string>
+			<string>(?&lt;=[\};]*\s*)(?=[&amp;*:.#+&gt;a-zA-Z\[])</string>
 			<key>comment</key>
 			<string>Stuff for Selectors.</string>
 			<key>end</key>
