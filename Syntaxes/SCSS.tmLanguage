@@ -23,6 +23,22 @@
 	<array>
 		<dict>
 			<key>include</key>
+			<string>#comment_section_header_block</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#comment_header_block</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#comment_block</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#selectors</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#variable_setting</string>
 		</dict>
 		<dict>
