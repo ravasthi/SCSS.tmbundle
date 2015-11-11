@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Symbol List: Group</string>
 	<key>scope</key>
-	<string>source.scss comment.block.header.scss -source.scss.embedded</string>
+	<string>source.scss comment.block.header.section -source.scss.embedded</string>
 	<key>settings</key>
 	<dict>
 		<key>showInSymbolList</key>
